@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>BikeBuddy</title>
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="apple-touch-icon" href="img/applelogo.png">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+      <link rel="stylesheet" href="css/biketrip.css">
+       <link rel="stylesheet" href="css/loading.css">
+
+       <script src="./js/loading/jquery-2.1.0.min.js"></script>
+       <script src="./js/loading/functions.js"></script>
+
+      <!-- Circle -->
+      <link rel="stylesheet" href="./css/tick.css">
+      <script src="./js/tick.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+
+
+
+      <script>
+        function handleTickInit(tick) {
+    
+            var timer = Tick.helper.interval(function(passed) {
+                    tick.value = Tick.helper.duration(passed, ['m', 's', 'ms']);
+                },
+                16,
+                { autostart:false }
+            );
+            
+            var buttonStart = document.querySelector('[data-action=start]');
+            var buttonStop = document.querySelector('[data-action=stop]');
+            var buttonReset = document.querySelector('[data-action=reset]');
+
+            buttonStart.addEventListener('click', function() {
+                
+                timer.start();
+                
+                // show stop button
+                buttonStop.style.display = '';
+
+                // hide start button
+                buttonStart.style.display = 'none';
+            });
+
+            buttonStop.addEventListener('click', function() {
+                
+                timer.pause();
+                
+                // hide stop button
+                buttonStop.style.display = 'none';
+                
+                // show start button
+                buttonStart.style.display = '';
+                
+            });
+
+            buttonReset.addEventListener('click', function() {
+                
+                timer.reset();
+
+                // show stop button
+                buttonStop.style.display = '';
+    
+                // hide start button
+                buttonStart.style.display = 'none';
+                
+            })
+        }
+   
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+       
+
+  </head>
+
+  <body>
+
+    <!-- Preloader -->
+  <div id="preloader">
+    <div id="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="lading"></div>
+    </div>
+  </div><!-- /#preloader -->
+  <!-- Preloader End-->
+
+
+
+
+
+    <nav class="navbar-fixed-bottom">
+          <div class="navbar-bottom">
+              <a href="./Home.html" class="active">
+                <img src="img/icon/homewhite.png" alt="" id="homeicon">
+               </a>
+              <a href="./Group.html">
+                <img src="img/icon/groupwhite.png" alt="">
+              </a>
+              <a href="./SF-LAMap.html">
+                <img src="img/icon/mapwhite.png" alt="">
+              </a>
+              <a href="./Activity.html">
+                <img src="img/icon/activitywhite.png" alt="">
+              </a>
+              <a href="./Profile.html">
+                <img src="img/icon/profilewhite.png" alt="">
+              </a>
+          </div>
+      </nav>
+
+      
+
+      <div class="greenbox">
+        <div class="container">
+          <div class="greenform">
+
+          <!-- Select Basic -->
+            <div class="row">
+              <div class="col-xs-11 col-md-11">
+                      <select id="year" name="year" class="form-control" >
+                        <option value="1">Choose starting point</option>
+                        <option value="1">San Francisco, CA</option>
+                        <option value="1">Half Moon Bay, CA</option>
+                        <option value="1">Santa Cruz, CA</option>
+                        <option value="1">Monterey, CA</option>
+                        <option value="1">Big Sur, CA</option>
+                        <option value="1">Hearst Castle, San Simeon</option>
+                        <option value="1">Pismo Beach, CA</option>
+                        <option value="1">Lompoc, CA</option>
+                        <option value="1">Santa Barbara, CA</option>
+                        <option value="1">Los Angeles, CA</option>
+                      </select>
+                  
+                      <select id="year" name="year" class="form-control">
+                        <option value="1">Choose destination…</option>
+                        <option value="1">Los Angeles, CA</option>
+                        <option value="1">Santa Barbara, CA</option>
+                        <option value="1">Lompoc, CA</option>
+                        <option value="1">Pismo Beach, CA</option>
+                        <option value="1">Hearst Castle, San Simeon</option>
+                        <option value="1">Big Sur, CA</option>
+                        <option value="1">Monterey, CA</option>
+                        <option value="1">Santa Cruz, CA</option>
+                        <option value="1">Half Moon Bay, CA</option>
+                        <option value="1">San Francisco, CA</option>
+                      </select>
+              </div>
+
+              <div class="col-xs-1 col-md-1 info">
+                <a href="./info.html">
+                  <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    <!-- circle -->
+    <div class="homepageData">
+      
+
+
+   
+
+
+<div class="container">
+
+  <div class="notification">
+      <a href="./notification.html">
+        <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
+      </a>
+  </div>
+
+
+    <div class="tick" 
+         data-value="0"
+         data-did-init="handleTickInit">
+        
+        <div data-layout="overlay">
+
+            <div data-overlay="center">
+                
+                <div data-layout="horizontal center" data-value-mapping="indexes">
+                    <div class="tick-group">
+                        <span data-view="text" style="display:none;"></span>
+                    </div>
+                    <div class="tick-group">
+                        <span data-view="text" data-transform="pad(00)"></span>
+                        <strong>.</strong>
+                        
+                    </div>
+                    <div class="tick-group">
+                        <span data-view="text" data-transform="pad(000) -> substring(0,2)"></span>
+                    </div>
+                    
+                </div> 
+                
+            </div>
+            <div class="distance">
+                <p>Miles, Distance</p>
+             </div>
+
+            <div data-key="2"
+                 data-view="line"
+                 data-style="shape:circle; rail-color:#E8ECEA; fill-color:#2ECC71; fill-width:.15px; rail-width:18px;"
+                 data-transform="fraction(0,1000)">
+            </div>
+        </div>
+   
+
+    
+<!-- Times -->
+
+
+  
+
+     <div class="tick" style="margin-top: 0px; 
+     position: absolute;
+     text-align:left; 
+     margin-left:0;
+     left:200px; 
+     top:250px;
+     width:100px" 
+     
+    data-value="0"
+    data-did-init="handleTickInit">
+        
+        <div data-layout="overlay">
+            <div data-overlay="center">
+                
+                <div data-layout="horizontal center" data-value-mapping="indexes">
+                    <div class="tick-group">
+                        <span data-view="text" style="display:none; font-size:50px;"></span>
+                    </div>
+                    <div class="tick-group">
+                        <span data-view="text" style="font-size:60px;" data-transform="pad(00)"></span>
+                        <strong>:</strong>
+                        
+                    </div>
+                    <div class="tick-group">
+                        <span data-view="text" style="font-size:60px;" data-transform="pad(000) -> substring(0,2)"></span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+      <div class="Times">
+        <p>hrs, Time</p>
+      </div>
+
+            <div data-key="2"
+                 data-view="line"
+                 data-style="shape:circle; rail-color:rgba(0, 0, 0, 0.0); fill-color:rgba(0, 0, 0, 0.0); fill-width:.10px; rail-width:10px;"
+                 data-transform="fraction(0,1000)">
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- Speeds -->
+
+    <div class="tick" style="margin-top: 0;
+    position: absolute; 
+    text-align:right; 
+    margin-right:0;
+    right:200px; 
+    top:250px;
+    width:100px" 
+     
+    data-value="0"
+    data-did-init="handleTickInit">
+        
+        <div data-layout="overlay">
+            <div data-overlay="center">
+                
+                <div data-layout="horizontal center" data-value-mapping="indexes">
+                    <div class="tick-group">
+                        <span data-view="text" style="display:none; font-size:50px;"></span>
+                    </div>
+                    <div class="tick-group">
+                        <span data-view="text" style="font-size:60px;" data-transform="pad(00)"></span>
+                        <strong>.</strong>
+                    </div>
+                    <div class="tick-group">
+                        <span data-view="text" style="font-size:60px;" data-transform="pad(000) -> substring(0,2)"></span>
+                    </div>
+                    
+                </div>
+            </div>
+
+      <div class="Speeds">
+          <p>mph, Speed</p>
+      </div>
+
+            <div data-key="2"
+                 data-view="line"
+                 data-style="shape:circle; rail-color:rgba(0, 0, 0, 0.0); fill-color:rgba(0, 0, 0, 0.0); fill-width:.10px; rail-width:10px; opacity:0;"
+                 data-transform="fraction(0,1000)">
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+     
+
+
+
+
+      <div class="homebutton">
+        <button type="button" data-action="start"><strong>START</strong></button>
+    
+        <button type="button" data-action="stop" style="display:none; color:#F6A623; border: 4px solid #F6A623;"><strong>STOP</strong></button>
+    
+        <button type="button" data-action="reset" style="display:none;">reset</button>
+      </div>
+
+</div>
+
+</div>
+
+ </div>
+
+
+
+
+
+      
+
+
+        
+
+  </body>
+</html>

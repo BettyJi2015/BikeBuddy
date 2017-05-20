@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BikeBuddy</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="img/applelogo.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="css/biketrip.css">
+    <link rel="stylesheet" href="css/group_json.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  </head>
+	<body>
+
+    	
+
+      <!-- <nav class="navbar-fixed-top-2"> -->
+ <!--      <div class="container">
+        <div class="navbar-top">
+          <div class="lefticon">
+            <a href="./Group.html">
+                <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+          </div>
+         </div>
+      </div>
+    </nav> -->
+
+
+
+    <!-- home section -->
+<section id="home">
+	<div class="container">
+		<div class="navbar-top">
+	          <div class="lefticon">
+	            <a href="./Group.html">
+	                <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+	            </a>
+	          </div>
+         </div>
+
+		<div class="imgtext">
+			<h2>SUGAR CYCLES</h2>
+			<p>San Francisco, CA - Half Moon Bay, CA</p>
+			<p>580Miles</p>
+			<p>5/8/2017-5/10/2017</p>
+					
+		</div>
+				
+	</div>
+		
+</section>
+
+<div class="addresslocation" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<strong><p>Meeting Time:</p></strong>
+			   		<p>May 8, 9:00 AM</p>
+			   		<br>
+			   		<strong><p>Meeting Address:</p></strong>
+			   		<p>Golden Gate Bridge, San Francisco</p>
+			   		
+			   		<div class="joinbutton">
+						<button type="button" class="btn btn-info btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>
+						<button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-remove"></i></button>
+					</div>
+					<br>
+			   		<div class="span8">
+			        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.244011817007!2d-122.47714068487014!3d37.807753118034796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858690432c06e7%3A0xfac9601f983db5bd!2sGolden+Gate+Bridge+Welcome+Center!5e0!3m2!1sen!2sus!4v1493081699972" width="100%" height="50%" frameborder="0" style="border:0" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+			    	</div>   		
+
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+	<div class="addresslocation" style="margin-bottom:80px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<strong><p>Group Members 1/8:</p></strong>
+				<div class="myuser">
+					<img src="./img/members/myuser.png" alt="">
+
+					<!-- <a href="./Group_MyTrip.html" style="font-weight:600" >Invite People</a> -->
+					
+					<button id="myBtn">Invite People</button>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="createbutton">
+      <a href="./Group_MyTrip.html" id="myBtn" style="font-weight:600" class="animated bounce">CHALLENGE</a>
+    </div>
+
+    
+
+    <div id="myModal" class="modal">
+    	<div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>Invite..</p>
+
+		    <hr />
+        	<div class="text-center center-block">
+            <br />
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+</script>
+
+
+
+	  
+	</body>
+</html>
+
+
+
+
+
+
+
+

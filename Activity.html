@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BikeBuddy</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="img/applelogo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="css/biketrip.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  </head>
+	<body>
+
+    	<nav class="navbar-fixed-bottom">
+	        <div class="navbar-bottom">
+	            <a href="./Home.html" class="active">
+	              <img src="img/icon/homewhite.png" alt="">
+	             </a>
+	            <a href="./Group.html">
+	              <img src="img/icon/groupwhite.png" alt="">
+	            </a>
+	            <a href="./BikeTrip_Map.html">
+	              <img src="img/icon/mapwhite.png" alt="">
+	            </a>
+	            <a href="./Activity.html">
+	              <img src="img/icon/activitywhite.png" alt="">
+	            </a>
+	            <a href="./Profile.html">
+	              <img src="img/icon/profilewhite.png" alt="">
+	            </a>
+	        </div>
+      </nav>
+
+
+
+    	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    		<div class="container">
+		        <div class="navbar-top">
+		            <div class="lefticon">
+		                <a href="./Home.html">
+		                    <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+		                </a>
+		            </div>
+		        </div>
+		        <div class="trips2">
+		        <ul id="myTabs">
+					<a href="#tab_default_1" data-toggle="tab"class="RANKING">RANKING</a>
+		            <a href="#tab_default_2" data-toggle="tab" class="STAMPS">STAMPS</a>
+		            <a href="#tab_default_3" data-toggle="tab" class="BIKE-LEVES">BIKE LEVES</a>
+		        </ul>
+		        </div>		        
+		    </div>
+    	</nav>
+
+
+
+    	<div class="tab-content">
+
+			<div class="tab-pane active" id="tab_default_1">
+				<div class="container">
+					<div class="row"> 
+						<div class="topone">
+							<img src="./img/members/topone.png" alt="">
+							<p>Johnson, 238.6 Miles</p>
+						</div>
+					</div>
+
+
+					<div class="addon">
+			          <ul>
+			            
+			            <li class="clearfix">
+			            	<div class="legend-info3">
+				            	<p><strong>2</strong></p>
+				            </div>
+			            	<img src="./img/members/cyclist2.png" alt="">
+				            <div class="legend-info">
+				            	<p><strong>Miller</strong></p>
+				            </div>
+				            <div class="legend-info2">
+				            	<p><strong>123.3 Miles</strong></p>
+				            </div>
+			            </li>
+
+			            <li class="clearfix">
+			            	<div class="legend-info3">
+				            	<p><strong>3</strong></p>
+				            </div>
+			            	<img src="./img/members/cyclist3.png" alt="">
+				            <div class="legend-info">
+				            	<p><strong>Garcia</strong></p>
+				            </div>
+				            <div class="legend-info2">
+				            	<p><strong>109.8 Miles</strong></p>
+				            </div>
+			            </li>
+
+			            <li class="clearfix">
+			            	<div class="legend-info3">
+				            	<p><strong>4</strong></p>
+				            </div>
+			            	<img src="./img/members/cyclist9.png" alt="">
+				            <div class="legend-info">
+				            	<p><strong>Martinez</strong></p>
+				            </div>
+				            <div class="legend-info2">
+				            	<p><strong>99.43 Miles</strong></p>
+				            </div>
+			            </li>
+
+			            <li class="clearfix" style="background-color:#2ECC71;">
+			            	<div class="legend-info3">
+				            	<p><strong>5</strong></p>
+				            </div>
+			            	<img src="./img/members/myuser.png" alt="">
+				            <div class="legend-info">
+				            	<p><strong>Rui Chen</strong></p>
+				            </div>
+				            <div class="legend-info2">
+				            	<p><strong>87.9 Miles</strong></p>
+				            </div>
+			            </li>
+
+			            <li class="clearfix">
+			            	<div class="legend-info3">
+				            	<p><strong>6</strong></p>
+				            </div>
+			            	<img src="./img/members/cyclist7.png" alt="">
+				            <div class="legend-info">
+				            	<p><strong>Anderson</strong></p>
+				            </div>
+				            <div class="legend-info2">
+				            	<p><strong>66.45 Miles</strong></p>
+				            </div>
+			            </li>
+
+			            <li class="clearfix">
+			            	<div class="legend-info3">
+				            	<p><strong>7</strong></p>
+				            </div>
+			            	<img src="./img/members/cyclist5.png" alt="">
+				            <div class="legend-info">
+				            	<p><strong>Davis</strong></p>
+				            </div>
+				            <div class="legend-info2">
+				            	<p><strong>33.98 Miles</strong></p>
+				            </div>
+			            </li>
+
+			          </ul>
+			        </div>					
+				</div>
+			</div>
+
+
+			<div class="tab-pane" id="tab_default_2">
+				<div class="container centered" style="margin-bottom:50px;">
+					<div class="row"> 
+						<div class="topone2">
+							<h3>WIN STAMPS</h3>
+							<p>Challenge each view point to unlock a stamp.</p>
+							</div>
+						</div>
+
+						<div class="stamp">
+						      <p>Put on onlock stamp</p>
+									
+						     <img src="img/stamps/1SFgreen.png" alt="">
+						     <img src="img/stamps/2Half Moon Baygreen.png" alt="">
+							 <img src="img/stamps/3Santa Cruz.png" alt="">
+							 <img src="img/stamps/4Monterry.png" alt="">
+							 <img src="img/stamps/5Big Sur.png" alt="">
+						     <img src="img/stamps/6Hearst Castle.png" alt="">
+						     <img src="img/stamps/7Pismo Beach.png" alt="">
+						     <img src="img/stamps/8Santa Maria.png" alt="">
+						     <img src="img/stamps/9Santa Barbara.png" alt="">
+						     <img src="img/stamps/10LA.png" alt="">
+						</div>
+						
+					</div>
+
+			</div>
+
+
+			<div class="tab-pane" id="tab_default_3">
+				<div class="container">
+					<div class="row"> 
+						<div class="topone">
+							<img src="./img/members/myusergreen.png" alt="">
+							<p>Rui Chen, 87.9 Miles</p>
+						</div>
+					</div>
+
+
+	<div class="addon">
+          <ul>
+            <li class="clearfix">
+            	<div class="level">
+              		<img src="./img/level/level1.png" alt="">
+            	</div>
+              	<div class="legend-info4">
+                	<strong>LEVEL 1</strong><br>20 Miles<br>180 people in this level.
+              	</div>
+            </li>
+
+            <li class="clearfix">
+            	<div class="level">
+              		<img src="./img/level/level2.png" alt="">
+            	</div>
+              	<div class="legend-info4">
+                	<strong>LEVEL 2</strong><br>50 Miles <br>159 people in this level.
+              	</div>
+            </li>
+
+            <li class="clearfix">
+            	<div class="level">
+              		<img src="./img/level/level3.png" alt="">
+            	</div>
+              	<div class="legend-info4">
+                	<strong>LEVEL 3</strong><br>100 Miles <br>143 people in this level.
+              	</div>
+            </li>
+
+            <li class="clearfix">
+            	<div class="level">
+              		<img src="./img/level/level4.png" alt="">
+            	</div>
+              	<div class="legend-info4">
+                	<strong>LEVEL 4</strong><br>210 Miles <br>122 people in this level.
+              	</div>
+            </li>
+
+            <li class="clearfix">
+            	<div class="level">
+              		<img src="./img/level/level5.png" alt="">
+            	</div>
+              	<div class="legend-info4">
+                	<strong>LEVEL 5</strong><br>300 Miles <br>98 people in this level.
+              	</div>
+            </li>
+            
+
+
+
+
+          </ul>
+        </div>
+
+
+
+
+
+					
+			</div>
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+    	
+
+
+	  
+	</body>
+</html>
+
+
+
+
+
+
+
+

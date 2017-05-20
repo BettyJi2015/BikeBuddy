@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>BikeBuddy</title>
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="apple-touch-icon" href="img/applelogo.png">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+      <link rel="stylesheet" href="css/biketrip.css">
+
+
+      <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css" rel="stylesheet">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+       
+
+  </head>
+
+  <body>
+
+     
+  
+      <nav class="navbar navbar-default navbar-fixed-top navbar-green" role="navigation">
+          <div class="container">
+            <div class="navbar-top">
+              <div class="lefticon">
+                <a href="./Home.html" style="color:white">
+                    <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+              </div>
+             </div>
+          </div>
+        </nav>
+
+
+    <div id="map"></div>
+
+
+    
+        <div class="ranking">
+            <div class="rankingTitle">
+                <h2>SUGAR CYCLES</h2>
+            </div>
+            <div class="rankinglist1">
+                <p>04 DAVIS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 MPH </p>
+            </div>
+            <div class="rankinglist2">
+                <p>05 CHEN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25.1 MPH</p>
+            </div>
+            <div class="rankinglist1">
+                <p>06 YUN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;26.7 MPH </p>
+            </div>
+        </div>
+
+        <div class="Member_icon">
+            <img src="img/map/MemberIcon.png" alt="" class="animated pulse">
+        </div>
+
+        <div class="camera_icon">
+            <a href="./upload.html">
+            <img src="img/map/cameraIcon.png" alt="" class="animated pulse">
+            </a>
+        </div>
+
+        <div id="members">
+            <img src="./img/members/cyclist1.png" class="membersImg1" alt="" aria-hidden="true">
+            <img src="./img/members/cyclist2.png" class="membersImg2" alt="" aria-hidden="true" >
+            <img src="./img/members/cyclist3.png" class="membersImg3" alt="" aria-hidden="true" >
+            <img src="./img/members/cyclist5.png" class="membersImg4" alt="" aria-hidden="true" >
+            <img src="./img/members/cyclist6.png" class="membersImg5" alt="" aria-hidden="true" >
+            <img src="./img/members/cyclist7.png" class="membersImg6" alt="" aria-hidden="true" >
+            <img src="./img/members/cyclist9.png" class="membersImg7" alt="" aria-hidden="true" >
+            <img src="./img/members/cyclist10.png" class="membersImg8" alt="" aria-hidden="true" >
+            
+        </div>
+
+            <!-- <div class="icons">
+              <li>
+                <a class="animated bounce" style="right: 75px; bottom: 75px;" href="#">
+                  <i class="fa fa-volume-up fa-2x"></i></a>
+              </li>
+              <li>
+                <a class="animated bounce" style="right: 80px; bottom: 130px;" href="#">
+                  <i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a class="animated bounce" style="right: 46px; bottom: 170px;" href="#">
+                  <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a class="animated bounce" style="right: -8px; bottom: 165px;" href="./moving.html">
+                  <i class="fa fa-play fa-2x" aria-hidden="true"></i></a>
+              </li>
+            </div> -->
+   
+
+    <script>
+
+    $(document).ready(function(){
+    $(".Member_icon").click(function(){
+        $("#members").toggle();
+        $("#members").draggable();
+    });
+    });
+
+    </script>
+
+
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwipdcv2O8t1niwamMD65QjwEZNT4Kopk&signed_in=true&callback=initMap"
+        async defer></script>
+
+    <script src="js/Map.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+        
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+callback({ "photographs" : [
+
+  {
+    "name":"WHEEL CLUB",
+    "filename":["cyclist1","cyclist2","cyclist3","cyclist4"],
+    "trip":"San Francisco, CA - Half Moon Bay, CA",
+    "date":"May 10, 10:00 AM",
+    "day":"10",
+    "month":"MAY",
+    "location":"Golden Gate Bridge, SF",
+  },
+  {
+    "name":"WOLF PACK",
+    "filename":["cyclist5","cyclist6","cyclist7"],
+    "trip":"San Francisco, CA - Half Moon Bay, CA",
+    "date":"May 20, 13:00 PM",
+    "day":"20",
+    "month":"MAY",
+    "location":"Union Square, SF"
+  },
+  {
+    "name":"YOUR PACE OF MINE",
+    "filename":["cyclist8","cyclist9","cyclist10","cyclist11"],
+    "trip":"San Francisco, CA - Half Moon Bay, CA",
+    "date":"May 22, 9:00 AM",
+    "day":"22",
+    "month":"MAY",
+    "location":"Union Square, SF"
+  },
+  {
+    "name":"COASTER",
+    "filename":["cyclist12","cyclist13","cyclist14"],
+    "trip":"San Francisco, CA - Half Moon Bay, CA",
+    "date":"JUN 10, 8:00 AM",
+    "day":"10",
+    "month":"JUN",
+    "location":"Golden Gate Bridge, SF"
+  },
+  {
+    "name":"GEARED UP",
+    "filename":["cyclist15","cyclist7"],
+    "trip":"San Francisco, CA - Half Moon Bay, CA",
+    "date":"JUN 16, 10:00 AM",
+    "day":"16",
+    "month":"JUN",
+    "location":"Union Square, SF"
+  },
+   {
+    "name":"TOUR DE FRIENDS",
+    "filename":["cyclist13","cyclist6","cyclist7"],
+    "trip":"San Francisco, CA - Half Moon Bay, CA",
+    "date":"JUN 22, 9:30 AM",
+    "day":"22",
+    "month":"JUN",
+    "location":"Golden Gate Bridge, SF"
+  }
+  
+]});

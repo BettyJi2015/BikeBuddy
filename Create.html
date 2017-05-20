@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>BikeBuddy</title>
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="apple-touch-icon" href="img/applelogo.png">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      
+      <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css" rel="stylesheet">
+
+
+      <link rel="stylesheet" href="css/biketrip.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+      <script>
+
+      $(function(){
+  
+
+  $("#datepicker1").datepicker();
+  $("#datepicker2").datepicker();
+
+});
+      </script>
+
+       
+
+  </head>
+
+  <body>
+
+
+     <nav class="navbar navbar-default navbar-fixed-top navbar-white" style="background-color: white;" role="navigation">
+      <div class="container">
+        <div class="navbar-top">
+          <div class="lefticon">
+            <a href="./Group.html">
+                <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+          </div>
+         </div>
+      </div>
+    </nav>
+
+
+  <div class="content">
+
+   
+    <div class="container">
+
+        <form class="form-horizontal">
+            <fieldset>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Group Name">Group Name</label>  
+              <div class="col-md-4">
+                <input id="event_name" name="Group Name" type="text" placeholder="Group Name" class="form-control input-md">
+              </div>
+            </div>
+
+            <!-- <div class="form-group">
+                <label class="col-md-4 control-label" for="notifymode">Choose starting point </label>
+                    <div class="col-md-6">
+                        <select id="notifymode" name="notifymode" class="form-control">
+                            <option value="1">Welcome Center, Golden Gate Bridge</option>
+                        <option value="1">Vista Point, Sausalito</option>
+                        <option value="1">Stanford University, San Jose</option>
+                        <option value="1">17 Mile Dr, Pacific Grove</option>
+                        <option value="1">Bixby Creek Bridge, Monterey</option>
+                        <option value="1">Hearst Castle, 750 Hearst Castle Rd, San Simeon</option>
+                        <option value="1">Pismo Beach, California</option>
+                        <option value="1">Santa Barbara, California</option>
+                        <option value="1">Santa Monica State Beach, Santa Monica</option>
+                        </select>
+                    </div>
+            </div> -->
+
+
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textinput">Start Date</label>  
+              <div class="col-md-4">
+              <input id="datepicker1" name="textinput" type="text" placeholder="Start Date" class="form-control input-md">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="textinput">End Date</label>  
+              <div class="col-md-4">
+              <input id="datepicker2" name="textinput" type="text" placeholder="End Date" class="form-control input-md">
+              </div>
+            </div>
+
+
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="selectbasic">Max Members:</label>
+              <div class="col-md-4">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+              </div>
+            </div>
+
+
+
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Meeting Address">Meeting Address</label>  
+              <div class="col-md-4">
+                <input id="event_name" name="Meeting Address" type="text" placeholder="Meeting Address" class="form-control input-md">
+              </div>
+            </div>
+
+
+            
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="dataFormat">Choose your option</label>
+                    <div class="col-md-4">
+                        <label class="radio-inline" for="dataFormat-0">
+                            <input type="radio" name="dataFormat" id="dataFormat-0" value="json" checked="checked"> Public
+                        </label>
+                        <label class="radio-inline" for="dataFormat-1">
+                            <input type="radio" name="dataFormat" id="dataFormat-1" value="xml"> Private
+                        </label>
+                    </div>
+            </div>
+
+
+            </fieldset>
+        </form>
+
+        
+    </div>
+    </div>
+
+    <div class="createbutton">
+      <a href="./Group.html" class="animated bounce">CREATE</a>
+    </div>
+    
+
+    
+  
+
+  </body>
+</html>

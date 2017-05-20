@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>BikeBuddy</title>
+      <meta charset="utf-8">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="apple-touch-icon" href="img/applelogo.png">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      
+
+      <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+      <script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css" rel="stylesheet">
+
+
+
+      <link rel="stylesheet" href="css/biketrip.css">
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <script>
+      $(document).ready(function() 
+      { 
+       // $('form').ajaxForm(function() 
+       // {
+       //  alert("Uploaded SuccessFully");
+        
+       // }); 
+      });
+
+      function preview_image() 
+      {
+       var total_file=document.getElementById("upload_file").files.length;
+       for(var i=0;i<total_file;i++)
+       {
+        $('#image_preview').append("<img src='"+URL.createObjectURL(event.target.files[i])+"'>");
+        $("#myform").hide();
+        $('#image_preview').addClass("myeg");
+
+       }
+      }
+
+
+      // click stamp
+      $(document).ready(function(){
+          $("#img01").click(function(){
+              $("#overlay").toggle();
+              $("#overlay").draggable();
+          
+          });
+          $("#img02").click(function(){
+              $("#overlay2").toggle();
+              $("#overlay2").draggable();
+          
+          });
+      });
+
+
+      $( function() {
+    $( "#overlay" ).draggable();
+  } );
+
+
+</script>
+
+</head>
+
+<body>
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-white" style="background-color: white;" role="navigation">
+      <div class="container">
+        <div class="navbar-top">
+          <div class="lefticon">
+            <a href="./SF-LAMap.html">
+                <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+          </div>
+         </div>
+      </div>
+    </nav>
+
+    <div class="uploadform">
+      <div class="container" >
+        <!-- <input type="file" accept="image/*" capture="camera"> -->
+        <form id="myform" action="upload_file.php" method="post" enctype="multipart/form-data">
+          <input type="file" id="upload_file" name="upload_file[]" onchange="preview_image();" value="upload" multiple/>
+        </form>
+
+        <div id="image_preview"></div>
+      </div>
+      
+    </div>
+
+ 
+  	
+
+	<div class="stamp">
+    <div class="container">
+      <p>Put on onlock stamp</p>
+			
+      <img src="img/stamps/1SF.png" alt="" id="overlay" >
+      <button id="img01"><img src="img/stamps/1SFgreen.png" alt=""></button>
+
+      <img src="img/stamps/2Half Moon Bay.png" alt="" id="overlay2">
+      <button id="img02"><img src="img/stamps/2Half Moon Baygreen.png" alt=""></button>
+
+	 		<img src="img/stamps/3Santa Cruz.png" alt="">
+	 		<img src="img/stamps/4Monterry.png" alt="">
+	 		<img src="img/stamps/5Big Sur.png" alt="">
+      <img src="img/stamps/6Hearst Castle.png" alt="">
+      <img src="img/stamps/7Pismo Beach.png" alt="">
+      <img src="img/stamps/8Santa Maria.png" alt="">
+      <img src="img/stamps/9Santa Barbara.png" alt="">
+      <img src="img/stamps/10LA.png" alt="">
+      
+  </div>
+	</div>
+
+    <div class="createbutton">
+      <a href="./Group_MyTrip.html">SAVE</a>
+    </div>
+
+</body>
+</html>
+
+

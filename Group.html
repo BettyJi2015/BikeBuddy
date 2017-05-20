@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BikeBuddy</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="img/applelogo.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="css/biketrip.css">
+    <link rel="stylesheet" href="css/group_json.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+
+
+
+  </head>
+	<body>
+    	<nav class="navbar-fixed-bottom">
+	        <div class="navbar-bottom">
+	            <a href="./Home.html" class="active">
+	              <img src="img/icon/homewhite.png" alt="">
+	             </a>
+	            <a href="./Group.html">
+	              <img src="img/icon/groupwhite.png" alt="">
+	            </a>
+	            <a href="./SF-LAMap.html">
+	              <img src="img/icon/mapwhite.png" alt="">
+	            </a>
+	            <a href="./Activity.html">
+	              <img src="img/icon/activitywhite.png" alt="">
+	            </a>
+	            <a href="./Profile.html">
+	              <img src="img/icon/profilewhite.png" alt="">
+	            </a>
+	        </div>
+      	</nav>
+
+
+
+    	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    		<div class="container">
+		        <div class="navbar-top">
+		            <div class="lefticon">
+		                <a href="./Home.html">
+		                    <i class="fa fa fa-angle-left" aria-hidden="true"></i>
+		                </a>
+		            </div>
+		        </div>
+		        <div class="trips">
+		        	<ul id="myTabs">
+		        	
+		        	<a href="#tab_default_1" data-toggle="tab" class="alltrips">ALL TRIPS</a>
+		            <a href="#tab_default_2" data-toggle="tab" class="yourtrips">MY TRIPS</a>
+
+
+		        	</ul>
+		        </div>		        
+		    </div>
+    	</nav>
+
+
+
+ <div class="tab-content">
+
+ 	<div class="tab-pane active" id="tab_default_1">
+
+		<div id="plus_icon">
+			<a href="./Create.html">
+				<img src="img/plus.png" alt="" class="animated pulse">
+			</a>
+		</div>
+    	
+
+
+
+    	<div class="page-header">
+    		<div class="container">
+    			<div id="custom-search-input">
+	                <div class="input-group">
+						<input id="search" class="form-control" type="text" name="search" placeholder="Search"/>
+	              		<span class="input-group-btn">
+	                        <button class="btn btn-info" type="button">
+	                            <i class="glyphicon glyphicon-search"></i>
+	                        </button>
+	                    </span>
+	            	</div>
+           		</div>
+
+
+
+				
+				<div style="clear:both;"></div>
+
+				<div id="update"><!-- search results will be added here --></div>
+			</div>
+		</div>
+				
+</div>	
+
+
+
+
+<div class="tab-pane" id="tab_default_2">
+	
+	<div class="page-header">
+    		<a href= "./SugarCycles.html">
+
+    		<ul class="searchresults">
+    			<div class="container">
+					<div class="panel-body">
+
+						<div class="col-xs-2 col-sm-2 formleft">
+							<h2>MAY</h2>
+							<h1>08</h1><br>
+						</div>
+
+						<div class="col-xs-9 col-sm-9 formright">
+							<li>			
+								<h2>SUGAR CYCLES</h2>
+								<p>San Francisco, CA - Half Moon Bay, CA</p>
+								<p>May 8, 9:00 AM</p> 
+								<p>Golden Gate Bridge, SF</p>
+								<img src="./img/members/myuser.png" alt="">
+							</li>
+						</div>
+
+						<div class="col-xs-1 col-sm-1 formright">
+							<div class="checkgreen">
+									<i class="fa fa-check-circle fa-lg" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+
+					</div>
+
+				</div>
+							
+			</ul>
+		</a>
+     	</div>
+
+
+
+
+
+
+</div>	
+    	
+
+</div>		
+    
+		
+
+
+	  	<script src="js/group_json.js"></script>
+	  
+	</body>
+</html>
+
+
+
+
+
+
+
+

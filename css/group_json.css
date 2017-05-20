@@ -1,0 +1,128 @@
+
+/* ----- */
+
+.container input {
+	font-size: 16px;
+	line-height:1.22222em;
+	outline:none;
+	padding:5px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+.container h1 {
+	font-size: 28px;
+	line-height:1.25em;
+}
+#search{
+	width:100%;
+}
+
+.searchresults {
+	text-align: left;
+	margin-bottom: 100px;
+  padding-left: 0;
+}
+
+
+.searchresults h2 {
+  font-weight: bold;
+	color: #4A4A4A;
+	font-size: 18px;
+	line-height:1.22222em;
+	margin: 3px 0 0 0;
+}
+
+.searchresults p{
+	margin: 0;
+}
+.searchresults h3 {
+	border-left: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    background: #1cae6f;
+    color: white;
+    vertical-align: middle;
+}
+
+.searchresults .formleft{
+  border-left: none;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    height: 105px;
+}
+
+.searchresults .formleft h1{
+  margin-top: 0;
+}
+
+
+.searchresults .panel-body{
+  margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+
+
+}
+.panel-body {
+    padding: 10px;
+}
+
+
+.searchresults li {
+	/*border-bottom: 1px solid #ddd;*/
+	display: inline-block;
+	list-style-type: none;
+	/*margin:-5px 0 0 -20px; 
+	min-width:300px;
+	padding: 5px 5px 5px 0;
+	overflow: hidden;
+	transition: background 0.5s ease;
+	width: 90%;*/
+}
+.searchresults li:first-child {
+	margin-top:0px;
+}
+.searchresults li:hover {
+ 	 background: #f9f9f9;  /*  changes li colors on hover  */
+ 	 color: #002b4f;
+	 cursor: pointer;
+}
+.searchresults li img { /* image thumbnails */
+	float: left;
+	padding: 0;
+	transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+	width: 50px;
+  border-color: #ddd;
+  border-width: 1px 0;
+  padding: 3px;
+}
+.searchresults li:hover img { /* image thumbnails on hover*/
+	transform: scale(1.05);
+	transform-origin: center center;
+}
+
+
+.searchresults a{
+	text-decoration: none;
+}
+#update{  /* results container */
+	max-height:100vh;
+	overflow-y:scroll;
+}
+
+
+
+
+
+
